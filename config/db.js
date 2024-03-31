@@ -12,7 +12,8 @@ mongoose.connection.on("end", () => {
 const startDatabase = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://sahilPandey:sahilPandey@cluster0.suiffqq.mongodb.net/"
+      //   "mongodb+srv://sahilPandey:sahilPandey@cluster0.suiffqq.mongodb.net/"
+      "mongodb://127.0.0.1:27017/test"
     );
   } catch (error) {
     console.log(error);
