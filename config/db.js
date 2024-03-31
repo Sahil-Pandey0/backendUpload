@@ -11,7 +11,9 @@ mongoose.connection.on("end", () => {
 
 const startDatabase = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(
+      "mongodb+srv://sahilPandey:sahilPandey@cluster0.suiffqq.mongodb.net/"
+    );
   } catch (error) {
     console.log(error);
   }
